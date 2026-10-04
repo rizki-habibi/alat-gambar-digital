@@ -18,3 +18,20 @@ Aktifkan Anonymous Sign-Ins pada Supabase Auth, lalu jalankan `supabase/schema.s
 
 ## Vercel
 Import repository ini ke Vercel, set environment variables dari `.env.example`, lalu deploy.
+
+## Asset VRM & Sketsa
+
+Versi studio sekarang memakai TypeScript + React + Next.js + Three.js + React Three Fiber + `@pixiv/three-vrm`. Paket `@pixiv/three-vrm` versi 3.5.5 mendukung pemuatan VRM di Three.js. Model dapat diimpor langsung dari komputer dalam format VRM/GLB/GLTF.
+
+Menu **Asset Library** menyediakan contoh karakter dari repositori publik:
+- Seed-san dari VRM Consortium (contoh publik/CC0 pada koleksi sample mereka).
+- VRM1 Constraint Twist Sample dari pixiv/three-vrm untuk pengujian fitur VRM.
+
+Model contoh dimuat dari URL sumber saat dipilih, sehingga binary besar tidak perlu dimasukkan ke Git repository. Selalu periksa lisensi/izin model sebelum redistribusi atau penggunaan komersial.
+
+Menu **Sketsa** menyediakan canvas gambar ringan dengan brush, eraser, ukuran, opacity, grid, dan gambar referensi. Ini sengaja dibuat sebagai alat konsep, bukan Blender penuh.
+
+Referensi teknis:
+- https://github.com/pixiv/three-vrm
+- https://github.com/vrm-c/vrm-specification
+- https://github.com/M3-org/CharacterStudio
